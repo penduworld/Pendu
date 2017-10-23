@@ -47,6 +47,7 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.Web.Extensions" />
@@ -99,9 +100,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Pendu\Pendu.csproj">
+    <ProjectReference Include="..\Pendu\Pendu.Web.csproj">
       <Project>{3EDFA359-9568-46A0-8648-91B78B6BEFC1}</Project>
-      <Name>Pendu</Name>
+      <Name>Pendu.Web</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

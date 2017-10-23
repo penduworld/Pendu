@@ -6,8 +6,10 @@ using System.Web.Mvc;
 
 namespace Pendu.Controllers
 {
+   
     public class HomeController : Controller
     {
+        readonly log4net.ILog logger = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         public ActionResult Index()
         {
             return View();
@@ -15,6 +17,7 @@ namespace Pendu.Controllers
 
         public ActionResult About()
         {
+            logger.Error("Test remove later TODO");
             ViewBag.Message = "Your application description page.";
 
             return View();

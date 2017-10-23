@@ -21,8 +21,17 @@ namespace Pendu.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("PenduConnection", throwIfV1Schema: false)
         {
+        }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<ApplicationUser>().ToTable("PenduUsers");
+            modelBuilder.Entity<IdentityRole>().ToTable("PenduRoles");
+            modelBuilder.Entity<IdentityUserRole>().ToTable("PenduUserRoles");
+            modelBuilder.Entity<IdentityUserClaim>().ToTable("PenduUserClaims");
+            modelBuilder.Entity<IdentityUserLogin>().ToTable("PenduUserLogins");
         }
 
         public static ApplicationDbContext Create()

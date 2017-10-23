@@ -7,6 +7,7 @@ using Microsoft.Owin.Security.Google;
 using Owin;
 using Pendu.Models;
 
+[assembly: log4net.Config.XmlConfigurator(ConfigFile = "Web.config", Watch = true)]
 namespace Pendu
 {
     public partial class Startup
@@ -58,11 +59,11 @@ namespace Pendu
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "1034597694937-0redivis135bk0vdl71nc8s1524vgmon.apps.googleusercontent.com",
+                ClientSecret = "kYuuO92BW13mYDkclPVHKUtl"
+            });
         }
     }
 }
