@@ -49,21 +49,6 @@
       <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="ServiceStack, Version=4.5.14.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ServiceStack.4.5.14\lib\net45\ServiceStack.dll</HintPath>
-    </Reference>
-    <Reference Include="ServiceStack.Client, Version=4.5.14.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ServiceStack.Client.4.5.14\lib\net45\ServiceStack.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="ServiceStack.Common, Version=4.5.14.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ServiceStack.Common.4.5.14\lib\net45\ServiceStack.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="ServiceStack.Interfaces, Version=4.0.0.0, Culture=neutral, PublicKeyToken=e06fbc6124f57c43, processorArchitecture=MSIL">
-      <HintPath>..\packages\ServiceStack.Interfaces.4.5.14\lib\portable-wp80+sl5+net45+win8+wpa81+monotouch+monoandroid+xamarin.ios10\ServiceStack.Interfaces.dll</HintPath>
-    </Reference>
-    <Reference Include="ServiceStack.Text, Version=4.5.14.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ServiceStack.Text.4.5.14\lib\net45\ServiceStack.Text.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -361,13 +346,13 @@
       <Project>{B828185C-3065-4357-918D-26C896494A59}</Project>
       <Name>Pendu.Entities</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Pendu.Interfaces\Pendu.Interfaces.csproj">
+      <Project>{493C4A92-A9CA-400F-9A88-911E904B66CB}</Project>
+      <Name>Pendu.Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Pendu.Persistence\Pendu.Persistence.csproj">
       <Project>{949447D8-C2F4-4CF6-875A-5B3CBC6FC09B}</Project>
       <Name>Pendu.Persistence</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Pendu.ServiceInterface\Pendu.ServiceInterface.csproj">
-      <Project>{F6E7279B-5775-44B5-B19D-79D5FC41F544}</Project>
-      <Name>Pendu.ServiceInterface</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

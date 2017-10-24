@@ -31,6 +31,7 @@
 namespace Pendu.Persistence.Data
 {
     using Pendu.Entities.Models;
+    using Pendu.Entities.Mappers;
     using System.Linq;
 
     #region Unit of work

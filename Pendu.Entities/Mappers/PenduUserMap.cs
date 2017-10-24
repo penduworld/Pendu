@@ -12,10 +12,10 @@
 #pragma warning disable 1591    //  Ignore "Missing XML Comment" warning
 
 
-namespace Pendu.Entities.Models
+namespace Pendu.Entities.Mappers
 {
     using Pendu.Common.Entities;
-
+    using Pendu.Entities.Models;
     // PenduUsers
     public class PenduUserMap : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<PenduUser>
     {
